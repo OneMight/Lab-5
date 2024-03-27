@@ -504,7 +504,7 @@ footer{
 input[type="input"] {
     border:none;
     outline: none;
-    width: 75%;
+    width: 60%;
     height: 80%;
     background-color: #F9FAFB;
     color: #292C32;
@@ -515,8 +515,8 @@ input[type="input"] {
 }
 
 input[type="submit"]{
-    margin-left: 10px;
-    width: 15.5%;
+    margin-left: 2%;
+    width: 20%;
     height: 85%;
     border-radius: 10px;
     border: none;
@@ -528,7 +528,8 @@ input[type="submit"]{
 
 input[type="submit"]:hover{
     cursor: pointer;
-    width: 70px;
+    width: 65px;
+    
     background-color:antiquewhite;
     color:#000000;
 }
@@ -800,7 +801,7 @@ input[type="submit"]:hover{
     .present_information > p{
         text-align: center;
     }
-
+    
     .self-photo{
         margin-top: 20px;
         padding: 0;
