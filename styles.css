@@ -17,6 +17,7 @@ header{
     height: auto;
     justify-content: center;
     align-items: center;
+    animation: down 1s ease
 }
 
 .container_header{
@@ -271,7 +272,7 @@ padding-top: 0.3%;
     margin-top: 0px;
     margin-right: 7px;
     padding-bottom: 100px;
-    padding-left: 50px;
+    padding-left: 0px;
    
 }
 
@@ -285,7 +286,7 @@ padding-top: 0.3%;
     gap: 15px;
     width: 83%;
     margin-top: 47px;
-    padding-right: 40px;
+
     
 }
 
@@ -318,6 +319,35 @@ padding-top: 0.3%;
     text-align: start;
     transition: all, 0.5s;
 }
+
+#imag1{
+    content: url(images/pack1.jpg);
+
+}
+
+#imag2{
+   content:url(images/pack2.jpg);
+}
+
+#imag3{
+    content:url(images/pack3.jpg);
+}
+#buttonswitch{
+    margin-top: 30px;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    border:1px solid black;
+    border-radius:20px;
+    background-color:#F4F3F0;
+    cursor:pointer;
+    transition: all, 0.5s;
+}
+
+#buttonswitch:hover{
+    background-color:#a59c7f;
+}
+
 .Preset{
     margin-top: 30px;
     margin-right: 45px;
@@ -515,8 +545,8 @@ input[type="input"] {
 }
 
 input[type="submit"]{
-    margin-left: 2%;
-    width: 20%;
+    margin-left: 5%;
+    width: 15%;
     height: 85%;
     border-radius: 10px;
     border: none;
@@ -528,7 +558,7 @@ input[type="submit"]{
 
 input[type="submit"]:hover{
     cursor: pointer;
-    width: 65px;
+    width: 60px;
     
     background-color:antiquewhite;
     color:#000000;
@@ -692,6 +722,110 @@ input[type="submit"]:hover{
     border-radius: 20px;
 }
 
+.Read_more{
+    transition-timing-function: cubic-bezier(.2,1,.9,-0.5);
+   
+    transition-duration: 2s;
+  transition-duration: 2s;
+}
+.present:hover .Read_more{
+    transform: translate(300px);
+    transform: translate(300px);
+}
+
+
+@keyframes swing
+{
+    15%
+    {
+        transform: translateX(10px);
+        transform: translateX(10px);
+    }
+    30%
+    {
+        transform: translateX(-10px);
+        transform: translateX(-10px);
+    }
+    50%
+    {
+        transform: translateX(30px);
+        transform: translateX(30px);
+    }
+    65%
+    {
+        transform: translateX(-30px);
+        transform: translateX(-30px);
+    }
+    80%
+    {
+        transform: translateX(20px);
+        transform: translateX(20px);
+    }
+    100%
+    {
+        transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes down{
+    50%{
+        opacity: 0.5;
+    }
+    
+    100%{
+        opacity: 1;
+    }
+}
+
+.param > img{
+    animation: rotate 2s ease;
+
+}
+
+
+
+
+/* создать json файл, поместить туда картинки
+сделать так чтобы они изменялись случайно в блоке container store
+ */
+
+@keyframes rotate{
+    15%{
+        transform: rotate(30deg);
+    }
+    30%{
+        transform: rotate(60deg);
+    }
+    45%{
+        transform: rotate(90deg);
+    }
+    60%{
+        transform: rotate(120deg);
+    }
+    75%{
+        transform: rotate(150deg);
+    }
+    90%{
+        transform: rotate(250deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.MyText{
+    display: flex;
+    align-items:center;
+    width: 100%;
+    justify-content: center;
+    -webkit-animation: swing 1s ease;
+    animation: swing 2s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+
 
 .burger-menu > a > p{
     font-size: 20px;
@@ -734,11 +868,10 @@ input[type="submit"]:hover{
         padding: 0;
         grid-template-columns: repeat(2,0.5fr);
         grid-template-rows: repeat(2,1fr);
+        justify-content: center;
+        background-image: url(images/pack1.png);
     }
 
-    .paks > div{
-        width: 379px;
-    }
 
     .Cards{
         justify-content: center;
@@ -816,7 +949,7 @@ input[type="submit"]:hover{
     .container{
         flex-direction: column;
         margin: 0 auto;
-        padding: 40px 0 0 0;
+        padding: 0;
     }
 
     .topicAndCards{
