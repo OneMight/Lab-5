@@ -1,9 +1,11 @@
 let button = buttonswitch;
 let randomnumb;
+const url ="https://api.github.com/OneMight/Lab-5/blob/gh-pages/imagen.json";
 
-const img =
-
-
+fetch(url)
+.then(response => response.json())
+.then(image => response.image[0].id_image)
+.catch(error => console.log(error));
 function decimalAdjust(type, value, exp) {
 
     if (typeof exp === "undefined" || +exp === 0) {
@@ -56,7 +58,5 @@ function switchimage(randomnumb){
 button.onclick = function(){
     randomnumb = getnumgerofimage();
     randomnumb = Math.round10(randomnumb,-1)
-    console.log(randomnumb);
-
     switchimage(randomnumb);
 }
