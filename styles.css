@@ -28,6 +28,10 @@ padding-top: 0.3%;
 
 }
 
+#logout{
+    display: none;
+}
+
 .param{
     position: relative;
     width: 80%;
@@ -35,7 +39,7 @@ padding-top: 0.3%;
 }
 
 .nav_menu{
-    width: 400px;
+    width: 700px;
     font-size: 17px;
     letter-spacing: 0.5px;
     transition: all, 0.5s;
@@ -50,7 +54,9 @@ padding-top: 0.3%;
     
 }
 
-
+.admin{
+    display: none;
+}
 
 .visit{
     text-decoration: none;
@@ -90,12 +96,23 @@ padding-top: 0.3%;
    
 }
 
+.container1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+
+    width: 100%;
+    height: auto;
+    background-color: white;
+    padding: 40px 0 40px 0px;
+}
 .container{
     position: relative;
     display: flex;
     justify-content: center;
     align-items:center;
-    
+
     width: 100%;
     height: auto;
     background-color: #F4F3F0;
@@ -215,7 +232,7 @@ padding-top: 0.3%;
   word-break: normal;
 }
 
-.Cards > div{
+.boxes{
     
     display: flex;
     text-align: left;
@@ -291,6 +308,7 @@ padding-top: 0.3%;
 }
 
 .textforpaks {
+   
     padding-left: 30px;
     margin: 0;
 }
@@ -312,7 +330,7 @@ padding-top: 0.3%;
 
 }
 
-.paks > div{
+.pakes{
     width: 379px;
     border-radius: 10px;
     background-color: #FFFFFF;
@@ -542,6 +560,11 @@ input[type="input"] {
     vertical-align: center;
     margin-top: 3px;
     padding-left: 20px;
+}
+
+.username{
+    font-size: 18px;
+    display: none;
 }
 
 input[type="submit"]{
@@ -839,6 +862,70 @@ input[type="submit"]:hover{
     display: none;
 }
 
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 36px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .slider:before {
+    position: absolute;
+    content:url("../images/Sun.png");
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #727a98;
+  }
+  
+ 
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    content:url("../images/moon.png");
+  }
+  
+
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  .darkmode{
+    background-color:#000000;
+    color:white;
+  }
+  .darkmodetext{
+    color:white;
+  }
+
 
 @media (min-width:770px) and (max-width: 1200px){
 
@@ -869,7 +956,7 @@ input[type="submit"]:hover{
         grid-template-columns: repeat(2,0.5fr);
         grid-template-rows: repeat(2,1fr);
         justify-content: center;
-        background-image: url(images/pack1.png);
+        
     }
 
 

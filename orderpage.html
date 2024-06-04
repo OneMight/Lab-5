@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesfororder.css">
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Order</title>
+</head>
+<body>
+    <header class="box">
+        <div class="container_header param">
+            <a href="index.html">
+                <img src="images/IMAGE.png" alt="">
+            </a>
+            
+            <nav class="container_header nav_menu">
+                
+                
+                <b class="username"></b>
+                <a href="#" class="GreenText i18n" i18n="Presets">Presets</a>
+                <a href="#" class="GreenText i18n" i18n="Prints">Prints</a>
+                <a href="orderpage.html" class="GreenText i18n" i18n="Store">Store</a>
+                <a href="#" class="GreenText i18n" i18n="About">About</a>
+                <a href="#" class="GreenText i18n" i18n="Contact">Contact</a>
+               
+                <div class="cart">
+                    <img src="images/bucket.png" alt="">
+                    <a href="#" style="text-decoration: none;">Cart</a>
+                    <p class="zero_style">0</p>
+                </div>
+            </nav>
+            <select name="" id="languageSelect">
+                <option value="en" id="translateEN" select>en</option>
+                <option value="ru" id="translateRU">ru</option>
+            </select>
+            <div class="toogle-switch">
+                <label class="switch">
+                    <input type="checkbox" id="check">
+                    <span class="slider round"></span>
+                  </label>
+            </div>
+            <input type="checkbox" id="menu_toogle">
+            <label class="btn" for="menu_toogle">
+            <span></span>
+            </label>
+            
+            <div class="burger-menu">
+                <a href="">
+                    <p class="i18n" i18n="Presets">Presets</p>
+                </a>
+                <a href="">
+                    <p class="i18n" i18n="Prints">Prints</p>
+                </a>
+                <a href="">
+                    <p class="i18n" i18n="Store">Store</p>
+                </a>
+                <a href="">
+                    <p class="i18n" i18n="About">About</p>
+                </a>
+                <a href="">
+                    <p class="i18n" i18n="Contact">Contact</p>
+                </a>
+                <a href="" style="display: flex; flex-direction: row; align-items:center; justify-content: center;">
+                    <img src="images/bucket.png" alt="">
+                    <p class="i18n" i18n="Cart">Cart</p>
+                </a>
+            </div>
+        </div>
+        
+    </header>
+    <main class="box">
+        <b class="i18n" i18n="youcan">you can order a photo session</b>
+        <form action="">
+            <input type="text" id="placename" placeholder="Input your name">
+            <input type="text" id="placetype" placeholder="Input type of photo shoot">
+            <select name="" id="countofhours">
+                <option value="2" class="i18n" i18n="2hours">2 hours</option>
+                <option value="4" class="i18n" i18n="4hours">4 hours</option>
+                <option value="6" class="i18n" i18n="6hours">6 hours</option>
+                <option value="12" class="i18n" i18n="12hours">12 hours</option>
+            </select>
+            <button id="submit" type="button" class="i18n" i18n="submit">Submit</button>
+        </form>
+    </main>
+    <div class="container_footer">
+        <div class="Contact">
+            <img src="images/MirroFooter.png" alt="">
+            <div class="information">
+                <div class="links">
+                    <div>
+                        <p class="FooterTextTitle i18n" i18n="Pages">Pages</p>
+                        <a href="" class="i18n" i18n="Home">Home</a>
+                        <a href="" class="i18n" i18n="Store">Store</a>
+                        <a href="" class="i18n" i18n="About">About</a>
+                        <a href="" class="i18n" i18n="Contact">Contact</a>
+                    </div>
+                    <div>
+                        <p class="FooterTextTitlecategories i18n" i18n="StoreCategories">Store Categories</p>
+                        <a href="" class="i18n" i18n="Presets">Presets</a>
+                        <a href="" class="i18n" i18n="Prints">Prints</a>
+                    </div> 
+                </div>
+                <div class="links">
+                    <div>
+                        <p class="FooterTextTitle i18n" i18n="PresetPacks">
+                            Preset Packs
+                        </p>
+                        <a href="" class="i18n" i18n="MirroPresetPackVol01">Mirro Preset Pack Vol. 01</a>
+                        <a href="" class="i18n" i18n="MirroPresetPackVol02">Mirro Preset Pack Vol. 02</a>
+                        <a href="" class="i18n" i18n="MirroPresetPackVol03">Mirro Preset Pack Vol. 03</a>
+                        <a href="" class="i18n" i18n="MirroPresetPackVol04">Mirro Preset Pack Vol. 04</a>
+                    </div>
+                    <div>
+                        <p class="FooterTextTitle i18n" i18n="BusinessArea">Business Area</p>
+                        <a href="" class="i18n" i18n="WeddingPhotography">Wedding Photography</a>
+                        <a href="" class="i18n" i18n="SportsPhotography">Sports Photography</a>
+                        <a href="" class="i18n" i18n="PortraitPhotography">Portrait Photography</a>
+                        <a href="" class="i18n" i18n="ArchitecturePhotography">Architecture Photography</a>
+                        <a href="" class="i18n" i18n="AnimalPhotography">Animal Photography</a>
+                        <a href="" class="i18n" i18n="FoodPhotography">Food Photography</a>
+                        <a href="" class="i18n" i18n="NaturePhotography">Nature Photography</a>
+                    </div>
+                </div>
+                <div class="links">
+                    <div>
+                        <p class="FooterTextTitle i18n" i18n="UtilityPages"> Utility Pages</p>
+                        <a href="" class="i18n" i18n="Instructions">Instructions</a>
+                        <a href="" class="i18n" i18n="StyleGuide">Style guide</a>
+                        <a href="" class="i18n" i18n="Licenses">Licenses</a>
+                        <a href="" class="i18n" i18n="Changelog">Changelog</a>
+                        <a href="" class="">404</a>
+                    </div>
+                </div>
+                <div class="containerinput">
+                    <p class="FooterTextTitle i18n" i18n="Newsletter"> NewSletter</p>
+                    <p class="textupperinput i18n" i18n="Subscribe"> Subscribe to my newsletter where I share
+                         news about upcoming printings and preset sales.
+                    </p>
+                        <div class="inputemail">
+                            <input type="input" placeholder="Email address">      
+                            <input type="submit">
+                        </div>
+                </div>
+            </div>
+            <div class="corporation">
+                <div class="NameofCorporation">
+                    <p class="i18n" i18n="MirroPhotography">
+                        © Mirro Photography, LLC. All rights reserved. Powered by
+                    </p>
+                    <p class="i18n" i18n="Webflow">Webflow</p>
+                </div>
+                <div class="SocialMedia">
+                    <a href="">
+                        <img src="images/IN.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="images/Facebook.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="images/Instagram.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="images/Twitter.png" alt="">
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+        <script src="scriptfororder.js"></script>
+</body>
+</html>

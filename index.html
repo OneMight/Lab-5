@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>lab 3</title>
+    <title>8</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,21 +14,36 @@
 
 </head>
 <body>
-    <header>
+    <header class="box">
         <div class="container_header param">
             <img src="images/IMAGE.png" alt="">
+            <button id="logout" class="i18n" i18n="Logout">Log out</button>
             <nav class="container_header nav_menu">
-                <a href="#" class="GreenText">Presets</a>
-                <a href="#" class="GreenText">Prints</a>
-                <a href="#" class="GreenText">Store</a>
-                <a href="#" class="GreenText">About</a>
-                <a href="#" class="GreenText">Contact</a>
-                <div class=" cart">
+                <a class="register" href="Register.html">Register</a>
+                
+                <b class="username"></b>
+                <a href="#" class="GreenText i18n" i18n="Presets">Presets</a>
+                <a href="#" class="GreenText i18n" i18n="Prints">Prints</a>
+                <a href="orderpage.html" class="GreenText i18n" i18n="Store">Store</a>
+                <a href="#" class="GreenText i18n" i18n="About">About</a>
+                <a href="#" class="GreenText i18n" i18n="Contact">Contact</a>
+                <a href="adminpage.html" class="GreenText admin i18n" i18n="adminpage">admin pag</a>
+                <div class="cart">
                     <img src="images/bucket.png" alt="">
                     <a href="#" style="text-decoration: none;">Cart</a>
                     <p class="zero_style">0</p>
                 </div>
             </nav>
+            <select name="" id="languageSelect">
+                <option value="en" id="translateEN" select>en</option>
+                <option value="ru" id="translateRU">ru</option>
+            </select>
+            <div class="toogle-switch">
+                <label class="switch">
+                    <input type="checkbox" id="check">
+                    <span class="slider round"></span>
+                  </label>
+            </div>
             <input type="checkbox" id="menu_toogle">
             <label class="btn" for="menu_toogle">
             <span></span>
@@ -36,50 +51,46 @@
             
             <div class="burger-menu">
                 <a href="">
-                    <p>Presets</p>
+                    <p class="i18n" i18n="Presets">Presets</p>
                 </a>
                 <a href="">
-                    <p>Prints</p>
+                    <p class="i18n" i18n="Prints">Prints</p>
                 </a>
                 <a href="">
-                    <p>Store</p>
+                    <p class="i18n" i18n="Store">Store</p>
                 </a>
                 <a href="">
-                    <p>About</p>
+                    <p class="i18n" i18n="About">About</p>
                 </a>
                 <a href="">
-                    <p>Contact</p>
+                    <p class="i18n" i18n="Contact">Contact</p>
                 </a>
                 <a href="" style="display: flex; flex-direction: row; align-items:center; justify-content: center;">
                     <img src="images/bucket.png" alt="">
-                    <p>Cart</p>
+                    <p class="i18n" i18n="Cart">Cart</p>
                 </a>
             </div>
         </div>
         
     </header>
-    <div class="MyText">
-        <p>
-            This is my text
-        </p>
-    </div>
-    <div class="container">
+   
+    <div class="container box">
         <div class="shadow green">
             <img src="images/greenshadow.png" alt="">
         </div>
         <div class="shadow orange">
             <img src="images/orangeshadow.png" alt="">
         </div>
-        <div class="container present">
+        <div class="container present box">
             <div class="present_information">
-                <p class="visit">Hi, I'm James Mirro & <br> I'm a photographer.</p>
-                    <p style="color: #292C32; word-spacing: 4px;margin: 0; padding-top: 2.5%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Suspendisse <br>
+                <p class="visit i18n darktext" i18n="HiImJamesMirro">Hi, I'm James Mirro & <br> I'm a photographer.</p>
+                    <p class="i18n" i18n="LoremIpsum" style="color: #292C32; word-spacing: 4px;margin: 0; padding-top: 2.5%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Suspendisse <br>
                         varius enim in eros elementum tristique. Duis cursus, mi quis viverra <br>
                         ornare,eros dolor interdum nulla, ut commodo diam libero vitae erat. <br>
                         Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut <br>
                         sem vitae risus tristique posuere.
                     </p>
-                <a href="#" class="Read_more">Read more</a>
+                <a href="#" class="Read_more i18n" i18n="ReadMore">Read more</a>
                
             </div>
          
@@ -89,129 +100,129 @@
 
         </div>
     </div>
-    <div class="container card" style="background-color: white;">
+    <div class="container1 card box">
         <div class="shadow gray">
             <img src="images/grayshadow.png" alt="">
         </div>
         <div class="Topic">
             <div class="topicAndCards">
                 <img src="images/line.png" alt="">
-               <p style=" color: #3A5F56; font-size: 32px; margin: 2%; text-align: center; font-family: Source sans-serif;">Services</p>
-               <p style="text-align: center; word-spacing: 5px;">Lorem ipsum dolor sit amet,
+               <p class="i18n" i18n="Services" style=" color: #3A5F56; font-size: 32px; margin: 2%; text-align: center; font-family: Source sans-serif;">Services</p>
+               <p style="text-align: center; word-spacing: 5px;" class="i18n" i18n="LoremIpsum">Lorem ipsum dolor sit amet,
                  consectetur adipiscing elit. Suspendisse varius enim <br>
                   in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor <br>
                   interdum nulla.
                 </p>
             </div>
             <div class="Cards">
-                <div class="first_1">
+                <div class="first_1 boxes">
                     <div class="imagen">
                         <img src="images/wending.png" alt="">
                     </div>
-                    <p class="titleforcards">Wedding Photography</p>
-                    <p class="TextForCards">Wedding photography is often called the  
+                    <p class="titleforcards i18n" i18n="WeddingPhotography">Wedding Photography</p>
+                    <p class="TextForCards i18n" i18n="WeddingPhotographyText">Wedding photography is often called the  
                         bread and butter of photographers
                          — but  that doesn't mean it has to be boring. Quite  the opposite!
                     </p>
                     <div>
-                        <a href="">Read more
+                        <a href="" class="i18n" i18n="ReadMore">Read more
                              <img src="images/row.png" alt="">
                         </a>
                         
                     </div>
                 </div>
-                <div class="second">
+                <div class="second boxes">
                     <div class="imagen">
                         <img src="images/sport.png" alt="">
                     </div>
-                    <p class="titleforcards">Sports Photography</p>
-                    <p class="TextForCards">Sports photography is awesome. Sitting on 
+                    <p class="titleforcards i18n" i18n="SportsPhotography">Sports Photography</p>
+                    <p class="TextForCards i18n" i18n="SportsPhotographyText">Sports photography is awesome. Sitting on 
                         the  sidelines with a massive
                          telephoto  allows me to get  right into the action 
                         — I  love shooting sports where  there's a lot of  explosive movement.
                     </p>
                     <div>
-                        <a href="">Read more
+                        <a href="" class="i18n" i18n="ReadMore">Read more
                             <img src="images/row.png" alt="">
                         </a>
                         
                     </div>
                 </div>
-                <div class="third">
+                <div class="third boxes">
                     <div class="imagen">
                         <img src="images/family.png" alt="">
                     </div>
-                    <p class="titleforcards">Portrait Photography</p>
-                    <p class="TextForCards">Who doesn't love portrait photography? I  love being able to 
+                    <p class="titleforcards i18n" i18n="PortraitPhotography">Portrait Photography</p>
+                    <p class="TextForCards i18n" i18n="PortraitPhotographyText">Who doesn't love portrait photography? I  love being able to 
                         capture that expression, 
                          quirk, smile or whatever, that sort of  defines a person.
                         </p>
                         <div>
-                            <a href="">Read more
+                            <a href="" class="i18n" i18n="ReadMore">Read more
                                 <img src="images/row.png" alt="">
                             </a>
                         </div>
                 </div>
-                <div class="fourth">
+                <div class="fourth boxes">
                     <div  class="imagen" >
                         <img src="images/architecture.png" alt="">
                     </div>
-                    <p class="titleforcards">Architecture Photography</p>
-                    <p class="TextForCards">The nice thing about shooting architecture (in my opinion)
+                    <p class="titleforcards i18n" i18n="ArchitecturePhotography">Architecture Photography</p>
+                    <p class="TextForCards i18n" i18n="ArchitecturePhotographyText">The nice thing about shooting architecture (in my opinion)
                          is that it's so easy to do.  Seriously,
                          just pick up your camera and get out there.
                         </p>
                         <div>
-                            <a href="">Read more
+                            <a href="" class="i18n" i18n="ReadMore">Read more
                                 <img src="images/row.png" alt="">
                             </a>
                           
                         </div>
                 </div>
-                <div class="fives">
+                <div class="fives boxes">
                     <div class="imagen">
                         <img src="images/animal.png" alt="" >
                     </div>
-                    <p class="titleforcards">Animal Photography</p>
-                    <p class="TextForCards">Whenever I'm travelling I always make sure  to pack gear that
+                    <p class="titleforcards i18n" i18n="AnimalPhotography">Animal Photography</p>
+                    <p class="TextForCards i18n" i18n="AnimalPhotographyText">Whenever I'm travelling I always make sure  to pack gear that
                          allows me to capture the  local wildlife. 
                         The eagle that takes flight in  this picture is probably my most prized 
                         image.
                     </p>
                     <div>
-                        <a href="">Read more
+                        <a href="" class="i18n" i18n="ReadMore">Read more
                             <img src="images/row.png" alt="">
                         </a>
                        
                     </div>
                 </div>
-                <div class="sixes">
+                <div class="sixes boxes">
                     <div class="imagen">
                         <img src="images/food.png" alt="">
                     </div>
-                    <p class="titleforcards">Food Photography</p>
-                    <p class="TextForCards">I do food photography for blogs, restaurants, influencers, YouTube channels 
+                    <p class="titleforcards i18n" i18n="FoodPhotography">Food Photography</p>
+                    <p class="TextForCards i18n" i18n="FoodPhotographyText">I do food photography for blogs, restaurants, influencers, YouTube channels 
                         — but most  importantly
                          (if I manage to cook something  that looks good) — 
                          I do food photography  for myself.
                         </p>
                         <div>
-                            <a href="">Read more
+                            <a href="" class="i18n" i18n="ReadMore">Read more
                                 <img src="images/row.png" alt="" >
                             </a>
                         </div>
                 </div>
-                <div class="sevens">
+                <div class="sevens boxes">
                     <div class="imagen">
                         <img src="images/nature.png" alt="">
                     </div>
-                    <p class="titleforcards">Nature Photography</p>
-                    <p class="TextForCards">
+                    <p class="titleforcards i18n" i18n="NaturePhotography">Nature Photography</p>
+                    <p class="TextForCards i18n" i18n="NaturePhotographyText">
                         Landscape photography just never gets  old. Someone told me
                          that those are the  kinds of pictures you never look. Well, I  don't agree. 
                     </p>
                     <div>
-                        <a href="">Read more
+                        <a href="" class="i18n" i18n="ReadMore">Read more
                             <img src="images/row.png" alt="" >
                         </a>
                     </div>
@@ -219,13 +230,13 @@
             </div>
         </div>
     </div>
-    <div class="container_store">
-        <div class="container store">
+    <div class="container_store box">
+        <div class="container store box">
            
                 <div class="topicAndText">
                     <img src="images/line.png" alt="">
-                    <p style=" color: #DB343B; font-size: 32px; margin-top: 15px; margin-bottom: 0; letter-spacing: 1px;">Preset Store</p>
-                    <p style="text-align: center; margin-top: 2%; letter-spacing: 1px;  ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim <br>
+                    <p style=" color: #DB343B; font-size: 32px; margin-top: 15px; margin-bottom: 0; letter-spacing: 1px;" class="i18n" i18n="PresetStore">Preset Store</p>
+                    <p style="text-align: center; margin-top: 2%; letter-spacing: 1px;" class="i18n" i18n="PresetStoreText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim <br>
                        in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor <br>
                        interdum nulla.
                      </p>
@@ -235,54 +246,54 @@
                 </div>
            
             <div class="paks">
-                <div class="first">
+                <div class="first pakes box">
                     
                         <div id="imag1">
                         </div>           
-                  <p class="textforpaks title">Mirro Preset Pack Vol. 01</p>
-                  <p class="textforpaks text"> The first volume is my go-to presets when <br> shooting
+                  <p class="textforpaks title i18n" i18n="MirroPresetPackVol01">Mirro Preset Pack Vol. 01</p>
+                  <p class="textforpaks text i18n" i18n="MirroPresetPackVol01Text"> The first volume is my go-to presets when <br> shooting
                      action sports.
                      Just the right <br> amount of contrast and highlights to 
                      make <br>your photo (literally) pop!
                   </p>  
                 </div>
-                <div class="second_2">
+                <div class="second_2 pakes box">
                     
                     <div id="imag2">
 
                     </div>
-                    <p class="textforpaks title">Mirro Preset Pack Vol. 02</p>
-                    <p class="textforpaks text">Vol. 02 is dedicated solely
+                    <p class="textforpaks title i18n" i18n="MirroPresetPackVol02">Mirro Preset Pack Vol. 02</p>
+                    <p class="textforpaks text i18n" i18n="MirroPresetPackVol02Text">Vol. 02 is dedicated solely
                          to landscape <br> photography. Pay attention to your <br> exposure while out
                          there and these presets <br> will make your photos look great.
                     </p>
                 </div>
-                <div class="third_3">
+                <div class="third_3 pakes box">
                     <div id="imag3">
 
                     </div>
-                    <p class="textforpaks title">Mirro Preset Pack Vol. 03</p>
-                    <p class="textforpaks text">These are a collection 
+                    <p class="textforpaks title i18n" i18n="MirroPresetPackVol03">Mirro Preset Pack Vol. 03</p>
+                    <p class="textforpaks text i18n" i18n="MirroPresetPackVol03Text">These are a collection 
                         of my most used <br> wedding presets
                          — use with caution as <br> you'll end
                           up loving wedding photography.
                     </p>
                 </div>
             </div>
-            <button id="buttonswitch">Preset Store</button>
+            <button id="buttonswitch i18n" i18n="PresetStore">Preset Store</button>
            
         </div>
     </div>
-    <div class="pred_footer">
+    <div class="pred_footer box">
         <div class="shadow orange">
             <img src="images/liteorangeshadow.png" alt="">
         </div>
         <div class="conteinerforcontact">
-            <div class="block_contact">
-                <p style="font-size: 28px; word-spacing: 3px;">
+            <div class="block_contact box">
+                <p style="font-size: 28px; word-spacing: 3px;" class="i18n" i18n="WantToWorkTogether">
                     Wan't to work together? <br> Follow the link and let's <br> get in touch.
                 </p>
-                <a href="" class="button_contact">Contact</a>
+                <a href="" class="button_contact i18n" i18n="Contact">Contact</a>
             </div>
         </div>
         
@@ -293,52 +304,52 @@
             <div class="information">
                 <div class="links">
                     <div>
-                        <p class="FooterTextTitle">Pages</p>
-                        <a href="">Home</a>
-                        <a href="">Store</a>
-                        <a href="">About</a>
-                        <a href="">Contact</a>
+                        <p class="FooterTextTitle i18n" i18n="Pages">Pages</p>
+                        <a href="" class="i18n" i18n="Home">Home</a>
+                        <a href="" class="i18n" i18n="Store">Store</a>
+                        <a href="" class="i18n" i18n="About">About</a>
+                        <a href="" class="i18n" i18n="Contact">Contact</a>
                     </div>
                     <div>
-                        <p class="FooterTextTitlecategories">Store Categories</p>
-                        <a href="">Presets</a>
-                        <a href="">Prints</a>
+                        <p class="FooterTextTitlecategories i18n" i18n="StoreCategories">Store Categories</p>
+                        <a href="" class="i18n" i18n="Presets">Presets</a>
+                        <a href="" class="i18n" i18n="Prints">Prints</a>
                     </div> 
                 </div>
                 <div class="links">
                     <div>
-                        <p class="FooterTextTitle">
+                        <p class="FooterTextTitle i18n" i18n="PresetPacks">
                             Preset Packs
                         </p>
-                        <a href="">Mirro Preset Pack Vol. 01</a>
-                        <a href="">Mirro Preset Pack Vol. 02</a>
-                        <a href="">Mirro Preset Pack Vol. 03</a>
-                        <a href="">Mirro Preset Pack Vol. 04</a>
+                        <a href="" class="i18n" i18n="MirroPresetPackVol01">Mirro Preset Pack Vol. 01</a>
+                        <a href="" class="i18n" i18n="MirroPresetPackVol02">Mirro Preset Pack Vol. 02</a>
+                        <a href="" class="i18n" i18n="MirroPresetPackVol03">Mirro Preset Pack Vol. 03</a>
+                        <a href="" class="i18n" i18n="MirroPresetPackVol04">Mirro Preset Pack Vol. 04</a>
                     </div>
                     <div>
-                        <p class="FooterTextTitle">Business Area</p>
-                        <a href="">Wedding Photography</a>
-                        <a href="">Sports Photography</a>
-                        <a href="">Portrait Photography</a>
-                        <a href="">Architecture Photography</a>
-                        <a href="">Animal Photography</a>
-                        <a href="">Food Photography</a>
-                        <a href="">Nature Photography</a>
+                        <p class="FooterTextTitle i18n" i18n="BusinessArea">Business Area</p>
+                        <a href="" class="i18n" i18n="WeddingPhotography">Wedding Photography</a>
+                        <a href="" class="i18n" i18n="SportsPhotography">Sports Photography</a>
+                        <a href="" class="i18n" i18n="PortraitPhotography">Portrait Photography</a>
+                        <a href="" class="i18n" i18n="ArchitecturePhotography">Architecture Photography</a>
+                        <a href="" class="i18n" i18n="AnimalPhotography">Animal Photography</a>
+                        <a href="" class="i18n" i18n="FoodPhotography">Food Photography</a>
+                        <a href="" class="i18n" i18n="NaturePhotography">Nature Photography</a>
                     </div>
                 </div>
                 <div class="links">
                     <div>
-                        <p class="FooterTextTitle"> Utility Pages</p>
-                        <a href="">Instructions</a>
-                        <a href="">Style guide</a>
-                        <a href="">Licenses</a>
-                        <a href="">Changelog</a>
-                        <a href="">404</a>
+                        <p class="FooterTextTitle i18n" i18n="UtilityPages"> Utility Pages</p>
+                        <a href="" class="i18n" i18n="Instructions">Instructions</a>
+                        <a href="" class="i18n" i18n="StyleGuide">Style guide</a>
+                        <a href="" class="i18n" i18n="Licenses">Licenses</a>
+                        <a href="" class="i18n" i18n="Changelog">Changelog</a>
+                        <a href="" class="">404</a>
                     </div>
                 </div>
                 <div class="containerinput">
-                    <p class="FooterTextTitle"> NewSletter</p>
-                    <p class="textupperinput"> Subscribe to my newsletter where I share
+                    <p class="FooterTextTitle i18n" i18n="Newsletter"> NewSletter</p>
+                    <p class="textupperinput i18n" i18n="Subscribe"> Subscribe to my newsletter where I share
                          news about upcoming printings and preset sales.
                     </p>
                         <div class="inputemail">
@@ -349,10 +360,10 @@
             </div>
             <div class="corporation">
                 <div class="NameofCorporation">
-                    <p>
+                    <p class="i18n" i18n="MirroPhotography">
                         © Mirro Photography, LLC. All rights reserved. Powered by
                     </p>
-                    <p>Webflow</p>
+                    <p class="i18n" i18n="Webflow">Webflow</p>
                 </div>
                 <div class="SocialMedia">
                     <a href="">

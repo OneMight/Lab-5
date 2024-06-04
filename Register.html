@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styleforreg.css">
+    <title>Registrate</title>
+</head>
+<body>
+    <header class="box">
+        <div class="container_header param">
+            <a href="index.html">
+                <img src="images/IMAGE.png" alt="">
+            </a>
+           
+            <nav class="container_header nav_menu">
+                <button id="openlogin">Logining</button>
+                
+                <b class="username"></b>
+                <a href="#" class="GreenText i18n" i18n="Presets">Presets</a>
+                <a href="#" class="GreenText i18n" i18n="Prints">Prints</a>
+                <a href="orderpage.html" class="GreenText i18n" i18n="Store">Store</a>
+                <a href="#" class="GreenText i18n" i18n="About">About</a>
+                <a href="#" class="GreenText i18n" i18n="Contact">Contact</a>
+                <a href="adminpage.html" class="GreenText admin i18n" i18n="">admin pag</a>
+                <div class="cart">
+                    <img src="images/bucket.png" alt="">
+                    <a href="#" style="text-decoration: none;">Cart</a>
+                    <p class="zero_style">0</p>
+                </div>
+            </nav>
+            <select name="" id="languageSelect">
+                <option value="en" id="translateEN" select>en</option>
+                <option value="ru" id="translateRU">ru</option>
+            </select>
+            <div class="toogle-switch">
+                <label class="switch">
+                    <input type="checkbox" id="check">
+                    <span class="slider round"></span>
+                  </label>
+            </div>
+            <input type="checkbox" id="menu_toogle">
+            <label class="btn" for="menu_toogle">
+            <span></span>
+            </label>
+            
+            <div class="burger-menu">
+                <a href="">
+                    <p class="i18n" i18n="Presets">Presets</p>
+                </a>
+                <a href="">
+                    <p class="i18n" i18n="Prints">Prints</p>
+                </a>
+                <a href="">
+                    <p class="i18n" i18n="Store">Store</p>
+                </a>
+                <a href="">
+                    <p class="i18n" i18n="About">About</p>
+                </a>
+                <a href="">
+                    <p class="i18n" i18n="Contact">Contact</p>
+                </a>
+                <a href="" style="display: flex; flex-direction: row; align-items:center; justify-content: center;">
+                    <img src="images/bucket.png" alt="">
+                    <p class="i18n" i18n="Cart">Cart</p>
+                </a>
+            </div>
+        </div>
+        
+    </header>
+    <div class="main">
+        
+        <div class="registrate-box container">
+            <form action="" id="registerform">
+                <label for="Email"><b class="i18n" i18n="Email">Email</b></label>
+                <input id="Email" type="text" placeholder="Enter email" name="Email" required>
+                <p id="email-error" class="error-message i18n" i18n="InvalidEmail">Invalid email address</p>
+        
+                <label for="FirstName"><b class="i18n" i18n="FirstName">First Name</b></label>
+                <input type="text" id="FirstName" placeholder="Enter First Name" name="FirstName" required>
+                <p id="firstname-error" class="error-message" i18n="FirstNameRequired">First name is required</p>
+        
+                <label for="LastName"><b class="i18n" i18n="LastName">Last Name</b></label>
+                <input type="text" id="LastName" placeholder="Enter Last Name" name="LastName" required>
+                <p id="lastname-error" class="error-message i18n" i18n="LastNameRequired">Last name is required</p>
+        
+                <label for="FatherName"><b class="i18n" i18n="FatherName">Father Name</b></label>
+                <input type="text" id="FatherName" placeholder="Enter Father Name" name="FatherName">
+                <p id="fathername-error" class="error-message i18n"></p>
+        
+                <label for="phone"><b class="i18n" i18n="Phonenumber">Phone number</b></label>
+                <input id="phone" type="text" placeholder="Phone number" required>
+                <p id="phone-error" class="error-message i18n" i18n="InvalidPhoneNumber">Invalid phone number. Example: +375291234567 or 80291234567</p>
+        
+                <label for="birthday"><b class="i18n" i18n="birthday">Birthday Date</b></label>
+                <input id="birthday" type="date" placeholder="Birthday date" required>
+                <p id="birthday-error" class="error-message i18n" i18n="InvalidBirthday">You must be at least 16 years old</p>
+        
+                <a id="generatelogin" class="i18n" i18n="generate">Generate login</a>
+        
+                <label for="Logup"><b class="i18n" i18n="AccountName">Account Name</b></label>
+                <input id="Logup2" type="text" placeholder="Enter Account name" name="Account" required>
+                <p id="accountname-error" class="error-message i18n" i18n="AccountNameExists">Account name is already exists and required</p>
+        
+                <label for="password"><b class="i18n" i18n="Password">Password</b></label>
+                <input type="password" id="password" placeholder="Enter Password" name="password" required>
+                <p id="password-error" class="error-message i18n" i18n="InvalidPassword">Password must be 8-20 characters, include uppercase, lowercase, number, and special character</p>
+        
+                <label for="Cpassword"><b class="i18n" i18n="CPassword">Confirm Password</b></label>
+                <input type="password" id="Cpassword" placeholder="Confirm Password" name="Cpassword" required>
+                <p id="cpassword-error" class="error-message i18n" i18n="PasswordsDoNotMatch">Passwords do not match</p>
+                <div class="Policy">
+                    <input type="checkbox" class="checkboxprivacy">
+                        <p class="i18n privacy" i18n="privacy">Privacy Policy and Terms & Conditions</p>
+                    </div>
+                    <p id="check-error" class="error-message i18n" i18n="ReadPrivacyPolicy">Read privacy policy</p>
+                <button id="sign"><span class="i18n" i18n="signup">Sign up</span></button>
+            </form>
+        </div>
+        <div class="logindiv container">
+            <b class="i18n" i18n="login">Logining</b>
+            <form action="" id="loginform">
+                <label for="Logup"><b class="i18n" i18n="AccountName">Account Name</b></label>
+                <input type="text" placeholder="Enter username" id="username" required>
+              
+                <label for="password"><b class="i18n" i18n="Password">Password</b></label>
+                <input type="password" placeholder="Enter password" id="password-log" required>
+                
+                <button id="buttonlogin" type="button" class="i18n" i18n="Login">Log in</button> 
+            </form>
+        </div>
+    </div>
+    
+   
+    <script src="scriptforreg.js"></script>
+</body>
+</html>
